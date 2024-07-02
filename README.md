@@ -59,5 +59,4 @@ To re-test the submitted model using the provided notebook, follow these steps:
 - Large model dimensions resulted in worse WER. Models with an encoder dimension of 512 or higher often produced empty predictions for most audio files, regardless of the number of training epochs.
 - Recommended using small or medium models with encoder dimensions of 176 or 256 respectively.
 - Using SpecAugment improved the model's ability to handle noisy audio tracks.
-- Training for 15-60 epochs led to a generalized model, while more epochs caused overfitting.
 
