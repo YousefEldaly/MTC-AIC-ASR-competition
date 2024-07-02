@@ -12,6 +12,21 @@ Egyptian dialect. The goal is to minimize the Word Error Rate (WER) using a suit
 Our team, Hear to Win, achieved a WER of 26.17 using a small Jasper model from the NeMo toolkit, 
 ranking 12th out of 150+ registered teams.
 
+## Re-Test the Submitted Model
+
+To re-test the submitted model using the provided notebook, follow these steps:
+
+1. **Download the Notebook:**
+   - Go to [inference-script.ipynb](https://github.com/YousefEldaly/MTC-AIC-ASR-competition/blob/main/inference-script.ipynb).
+   - Click on the "Raw" button to download the notebook file.
+
+2. **Upload to Kaggle:**
+   - Sign in to your Kaggle account.
+   - Navigate to "Kernels" and create a new notebook.
+   - Upload the downloaded notebook file.
+
+3. **Run the Notebook:**
+
 ## Steps Taken
 
 1. **Determining the Training Platform**
