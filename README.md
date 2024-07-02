@@ -17,7 +17,7 @@ ranking 12th out of 150+ registered teams.
 To re-test the submitted model using the provided notebook, follow these steps:
 
 1. **Download the Notebook:**
-   - Go to [inference-script.ipynb](https://github.com/YousefEldaly/MTC-AIC-ASR-competition/blob/main/inference-script.ipynb).
+   - Go to [inference-script.ipynb](https://github.com/YousefEldaly/MTC-AIC-ASR-competition/blob/main/submitted_model/inference-script.ipynb).
    - Click on the "Raw" button to download the notebook file.
 
 2. **Upload to Kaggle:**
