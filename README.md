@@ -15,7 +15,7 @@ ranking 12th out of 150+ registered teams.
 
 ### Conformer Model Diagram
 
-![Conformer Architecture](https://www.researchgate.net/publication/375220070/figure/fig4/AS:11431281233466847@1712056638848/Conformer-encoder-architecture.tif)
+![Conformer Architecture](https://github.com/YousefEldaly/MTC-AIC-ASR-competition/blob/main/Conformer-encoder-architecture.png)
 
 _Figure 1: Diagram of the Conformer Architecture_
 
