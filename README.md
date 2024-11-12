@@ -37,14 +37,12 @@ The Conformer model has several key components:
 5. **Output Layer**: The final layer maps the encoded features to character or sub-word labels, depending on the configuration.
 
 ## Models Overview
-
-| Model Name                                 | Type                      | Label Type               | Key Components              | Dataset Tokens | WER (%)                           | Notes                                                                                          |
-| ------------------------------------------ | ------------------------- | ------------------------ | --------------------------- | -------------- | --------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Conformer-Hybrid-Transducer-CTC-Char**   | Hybrid (Transducer & CTC) | Character                | Encoder: Conformer          | 675,790        | Did not converge after 100 epochs | Combines Transducer and CTC; used for Egyptian dialect ASR with a character-based model.       |
-| **Transducer Model (transducer_model_v3)** | Transducer                | Character                | RNNTDecoder, RNNTJoint      | 675,790        | Did not converge after 80 epochs  | Used for ASR tasks with a focus on optimizing WER.                                             |
-| **CTC Model (Conformer-CTC-Char)**         | CTC                       | Character                | Encoder: Conformer          | 675,790        | 13.2 after 40 epochs              | Configured for training from scratch; may switch to BPE labels if needed.                      |
-| **Conformer-Transducer-Char**              | Transducer                | Character                | Encoder: Conformer, Decoder | 675,790        | Did not converge after 80 epochs  | Optimized by reducing the RNNTDecoder and RNNTJoint to manage model size and memory.           |
-| **Jasper**                                 | CTC                       | Character (No Tokenizer) | Deep CNN Layers             | Not Specified  | 24.4 after 30 epochs              | Known for using a deep convolutional network; suitable for speech recognition with ASR models. |
+| Model Name                       | Type         | Label Type | Key Components              | Tokens   | WER (epochs)               | Notes                                |
+| -------------------------------- | ------------ | ---------- | --------------------------- | -------- | --------------------- | ------------------------------------ |
+| Conformer-Hybrid-Transducer-CTC  | Hybrid       | Character  | Encoder: Conformer          | 675,790  | Not converged (100)   | Combines Transducer & CTC            |
+| Conformer-CTC-Char               | CTC          | Character  | Encoder: Conformer          | 675,790  | 13.2 (40)             | Configured from scratch              |
+| Conformer-Transducer-Char        | Transducer   | Character  | Encoder: Conformer, Decoder | 675,790  | Not converged (80)    | RNNTDecoder & Joint reduction        |
+| Jasper                           | CTC          | Character  | Deep CNN Layers             | N/A      | 24.4 (30)             | Deep CNN for ASR                     |
 
 Note: Some of these model are in [MTC-AIC phase2 repo](https://github.com/YousefEldaly/MTC-AIC-ASR-Competition-phase2)
 
